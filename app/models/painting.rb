@@ -9,7 +9,7 @@ class Painting
   end
 
   def self.total_price
-    self.all.map{ |painting| painting.price }.sum
+    self.all.map{ |painting| painting.price }.sum.to_i
   end
 
   attr_accessor :artist, :gallery, :price

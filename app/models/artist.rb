@@ -1,7 +1,3 @@
-# 9:38
-
-require 'pry'
-
 class Artist
 
   @@all = []
@@ -41,10 +37,10 @@ class Artist
   end
 
   def self.most_prolific
-    #eneumerate through the full artist arr with sort
-    #sorting artist instances by their productivity formula to float, else returns 0
-    #take the last (highest) elem of the new arr with [-1] index
-    self.all.sort { |artist| artist.paintings.length/artist.years_experience.to_f }[-1]
+    #eneumerate through the full artist arr with max_by
+    #returning the max artist instance according to productivity formula (to float, else returns 0)
+    #rothko 0.133
+    self.all.max_by { |artist| artist.paintings.length/artist.years_experience.to_f }
   end
 
 end

@@ -29,7 +29,7 @@ class Gallery
   def most_expensive_painting
     #sort all paintings at the gallery by price
     #take the highest/last index
-    self.paintings.sort { |painting| painting.price }[-1]
+    self.paintings.max_by { |painting| painting.price }
   end
 
 end

@@ -2,7 +2,7 @@ require_relative '../config/environment.rb'
 
 serra = Artist.new("Richard Serra", 20)
 judd = Artist.new("Donald Judd", 19)
-sandbeck = Artist.new("Fred Sandbek", 30)
+sandback = Artist.new("Fred Sandback", 30)
 rothko = Artist.new("Mark Rothko", 15)
 
 gagosian = Gallery.new("Gagosian", "New York City")
